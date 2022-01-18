@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：HTML_block_level_elements_and_inline_elements
+  File name(文件名): a
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/1/18
+  Time(创建时间)： 20:28
+  Description(描述)：
+  HTML 标签（元素）可以分为两个类别，分别是块级元素和内联元素（也叫行内元素）。
+块级元素
+块级元素最主要的特点是它们自己独占一行，块级元素中最具代表性的就是<div>，
+此外还有<p>、<nav>、<aside>、<header>、<footer>、<section>、<article>、<ul>、<address>、<h1>~<h6>等。
+块级元素一般都具有特定的语义，可以使代码的可读性更强。
+块级元素的主要特征如下所示：
+不管是否使用换行标签<br>，块级元素总是在新行上开始；
+块级元素的宽度、高度以及外边距和内边距等都可以控制；
+如果省略块级元素的宽度，那么它的宽度默认为当前浏览器窗口的宽度；
+块级元素中可以包含其它的内联元素和块级元素。
+内联元素
+内联元素也可以称为行内元素，行内元素中最常用的是<span>，
+此外还有<b>、<i>、<u>、<em>、<strong>、<sup>、<sub>、<big>、<small>、<li>、<ins>、<del>、<code>、<cite>、<dfn>、<kbd>和<var>等。
+内联元素往往带有某种特殊的显示效果，可以代替部分 CSS 样式，非常实用，例如：
+<b>和<i>标签可以修饰字体；
+<sub>和<sup>两个标签分别用来定义下标文本和上标文本。
+行内元素的主要特征如下所示：
+行内元素和其他元素会在同一行上显示；
+行内元素的宽、高以及外边距和内边距都不可以改变；
+行内元素的宽度就是其中内容的宽度，且不可以改变；
+内联元素中只能容纳文本或者其他内联元素。
+对于行内元素的使用，需要注意如下几点：
+设置宽度 width 无效；
+设置高度 height 无效，但可以通过 line-height 来设置行高；
+可以设置 margin 外边距，但只对左右外边距有效，上下无效；
+设置 padding 内边距时，只有左右 padding 有效，上下则无效，需要注意的是元素范围是增大了，但是对元素周围的内容是没影响的；
+可以通过 display 属性将元素在行内元素和块级元素之间进行切换。
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css">
+        #profile span {
+            display: inline-block;
+            padding: 2px 4px;
+            border: 1px solid #ddd;
+            background-color: #f6f6f6;
+            border-radius: 3px;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<div style="padding:0px 20px;border:1px solid #ccc; background-color:#eee;">
+    <h4>
+        hello
+    </h4>
+</div>
+</body>
+</html>
